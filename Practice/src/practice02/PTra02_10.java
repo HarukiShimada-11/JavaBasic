@@ -21,6 +21,11 @@ public class PTra02_10 {
 		 * ※ 日本円には小数点がありませんので、整数の値で出力してください(少数部分は切り捨て)
 		 * ※ プログラムは何行書いても良いです
 		 */
+		float taxC=0.08f*coffee+120;
+		float taxS=0.08f*snack+200;
+
+		double myMoney=moneyInHand-taxC-taxS;
+		System.out.println((int)myMoney);
 
 	}
 }
