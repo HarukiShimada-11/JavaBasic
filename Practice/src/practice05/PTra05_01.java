@@ -6,10 +6,13 @@ package practice05;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
+import javax.swing.plaf.basic.DefaultMenuLayout;
+
 public class PTra05_01 {
 	public static void main(String[] args) {
 
 		// ★ int型の変数numを宣言し、5で初期化してください
+		int num=5;
 
 
 		/*
@@ -23,6 +26,16 @@ public class PTra05_01 {
 		 *  ●numが0だった場合			->	「前の単元を復習してください」
 		 *  ●numが0～5以外だった場合	->	「正しい数値を入れてください」
 		 */
+		switch(num) {
+
+		case 0:System.out.println("前の単語を復習してください");break;
+		case 1:System.out.println("もう少しがんばりましょう");break;
+		case 2:System.out.println("不合格");break;
+		case 3:System.out.println("もう少しで合格");break;
+		case 4:System.out.println("合格");break;
+		case 5:System.out.println("満点");break;
+		default:System.out.println("正しい数値を入力してください");
+		}
 
 	}
 }
